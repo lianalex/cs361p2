@@ -28,7 +28,7 @@ public class DFAState extends State{
 	}
 	
 	/**
-	 * Overlaoded constructor that sets the state type
+	 * Overloaded constructor that sets the state type
 	 * @param name the state name
 	 * @param isFinal the type of state: true - final, false - nonfinal.
 	 */

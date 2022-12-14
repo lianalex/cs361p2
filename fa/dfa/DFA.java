@@ -39,7 +39,7 @@ public class DFA implements DFAInterface{
 	@Override
 	public void addState(String name){
 		DFAState s = checkIfExists(name);
-		if( s == null){
+		if(s == null){
 			s = new DFAState(name);
 			addState(s);
 		} else {
@@ -53,7 +53,7 @@ public class DFA implements DFAInterface{
 	@Override
 	public void addFinalState(String name){
 		DFAState s = checkIfExists(name);
-		if( s == null){
+		if(s == null){
 			s = new DFAState(name, true);
 			addState(s);
 		} else {

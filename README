@@ -1,0 +1,30 @@
+# cs361p2
+CS 361: Project 2 (Nondeterministic Finite Automata)
+Fall 2022
+Alex Liang
+
+Overview: 
+This Java application will model an instance of a nondeterministic finite automaton (NFA) including a method that computes an equivalent DFA to a NFA’s instance.
+
+Compiling and Using:
+$ javac fa.dfa.NFADriver
+$ java fa.dfa.NFADriver ./tests/*.txt
+
+Discussion:
+This project was a step up from p1. Building the NFAState and most of the methods for the NFA were similar to what 
+was outlined in the DFA and DFAState. There were issues with running the program from not using the correct data structures.
+At first using LinkedHashSets worked, but then I changed back to using just Sets. 
+
+It was nice learning how to implement DFS and BFS in the class since it was only covered theoretically in CS321. 
+There was a lot of pseudocode I could refer to for the implementation of the DFS, but the BFS was by far the most challenging 
+with implementing the getDFA().
+
+Testing:
+p2tc0.txt
+p2tc1.txt
+p2tc2.txt
+p2tc3.txt
+
+Sources: 
+https://www.programiz.com/dsa/graph-dfs
+https://www.programiz.com/dsa/graph-bfs
